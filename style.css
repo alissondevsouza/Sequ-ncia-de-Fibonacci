@@ -81,5 +81,18 @@ main{
     color: var(--gradient-1)
 }
 
+.resgateNumber input{
+    width: 17em;
+    height: 2.6em;
+    margin-top: .8em;
+    border: .2em solid var(--gradient-1);
+    border-radius: .3em;
+    background: transparent;
+    font-size: 1.2rem;
+    padding: .1em;
+    text-align: center;
+
+}
+
 
 
