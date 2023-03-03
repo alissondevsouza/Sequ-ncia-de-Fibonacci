@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Two Question Traget Sistemas</title>
+</head>
+
+<body onload="init()">
+    <main>
+        <div class="container">
+            <section class="title">
+                <span class="title1">Target Sistemas - Questão 2</span>
+                <span class="title2">Sequência de Fibonacci</span>
+            </section>
+
+            <section class="resgateNumber">
+                <span class="wantedNumber">Digite o numero desejado: </span>
+                <input type="number" id="inputNumber" min="1" max="100" onchange="numberRescue()"/>
+            </section>
+
+            <section>
+                <h3 id="Result"></h3>
+            </section>
+
+            <button id="newGameButton" onclick="resetcalculate()">Reset</button>
+
+
+        </div>
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+
+</html>

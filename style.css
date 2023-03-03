@@ -1,0 +1,85 @@
+:root {
+    --green: #5ed68a;
+    --blue: #1ea6c8;
+    --background: #fafafa;
+    --gradient-1: #343e63;
+    --gradient-2: #2a3352;
+  }
+
+/* Formatações Gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600; 
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 70vh;
+    text-align: center;
+    border: solid var(--blue);
+    background-color: var(--background);
+    min-height: 40vh;
+    border-width: 1.5em 1.5em 1.5em, 1.5em;
+    border-radius: 2em;
+}
+
+.container{
+    width: 90%;
+    height: 90%;
+}
+
+.container .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.container .title .title1{
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.container .title .title2{
+    margin-top: .2em;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.resgateNumber{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.resgateNumber .wantedNumber{
+    font-size: 1.5em;
+    font-weight: 800;
+    color: var(--gradient-1)
+}
+
+
+
