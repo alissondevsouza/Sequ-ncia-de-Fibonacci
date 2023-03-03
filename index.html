@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
@@ -8,7 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Two Question Traget Sistemas</title>
+    <title>Questão Dois - Traget Sistemas</title>
 </head>
 
 <body onload="init()">
@@ -24,16 +25,18 @@
                 <input type="number" id="inputNumber" onchange="numberRescue()"/>
             </section>
 
-            <section>
-                <h3 id="Result"></h3>
+            <section class="buttons">
+                <button type="submit" id="consult">CONSULTAR</button>
+                <button id="reset" onclick="resetcalculate()">REINICIAR</button>
             </section>
 
-            <button id="newGameButton" onclick="resetcalculate()">Reset</button>
-
-
+            <section class="containerResult">
+                <span class="titleResult">Resultado:</span>
+                <span class="result" id="result"></span>
+            </section>
         </div>
     </main>
-
+    
     <script src="script.js"></script> 
 </body>
 

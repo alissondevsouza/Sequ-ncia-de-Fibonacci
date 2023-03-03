@@ -24,13 +24,13 @@ function validateNumber(){
     }
 
     if ( userNumber == 0){
-        document.getElementById('Result').innerHTML = numberBelongs
+        document.getElementById('result').innerHTML = numberBelongs.fontcolor('green')
         document.getElementById('inputNumber').value = ''
     } else if ( userNumber == numberThree){
-        document.getElementById('Result').innerHTML = numberBelongs
+        document.getElementById('result').innerHTML = numberBelongs.fontcolor('green')
         document.getElementById('inputNumber').value = ''
     }else{
-        document.getElementById('Result').innerHTML = numberNotBelongs
+        document.getElementById('result').innerHTML = numberNotBelongs.fontcolor('red')
         document.getElementById('inputNumber').value = ''
     }
 }

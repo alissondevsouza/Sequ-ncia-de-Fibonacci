@@ -1,12 +1,10 @@
 :root {
-    --green: #5ed68a;
-    --blue: #1ea6c8;
-    --background: #fafafa;
-    --gradient-1: #343e63;
-    --gradient-2: #2a3352;
+    --primary: #2a3352;
+    --secondary: #1ea6c8;
+    --background: #d5d5d5;
   }
 
-/* Formatações Gerais */
+/* Inicio Estilos Gerais */
 *{
     margin: 0;
     padding: 0;
@@ -21,6 +19,10 @@ html{
 }
 
 body{
+    background-image: url(./images/backGround.jpeg);
+    background-color: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -32,19 +34,22 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40vw;
-    height: 70vh;
+    width: 600px;
+    height: 550px;
     text-align: center;
-    border: solid var(--blue);
-    background-color: var(--background);
-    min-height: 40vh;
+    border: solid var(--primary);
+    background-color: transparent;
     border-width: 1.5em 1.5em 1.5em, 1.5em;
     border-radius: 2em;
 }
+/* Fim Estilos Gerais */
 
+/* Inicio Estilos Container */
 .container{
     width: 90%;
     height: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .container .title{
@@ -59,40 +64,87 @@ main{
     font-size: 2em;
     font-style: italic;
     font-weight: 700;
+    color: var(--primary);
 }
 
 .container .title .title2{
     margin-top: .2em;
     font-size: 1.6em;
     font-weight: 500;
+    color: var(--primary);
 }
+/* Fim Estilos Container */
 
+/* Inicio Estilos Input */
 .resgateNumber{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 2.5em;
 }
 
 .resgateNumber .wantedNumber{
     font-size: 1.5em;
     font-weight: 800;
-    color: var(--gradient-1)
+    color: var(--primary)
 }
 
 .resgateNumber input{
     width: 17em;
     height: 2.6em;
     margin-top: .8em;
-    border: .2em solid var(--gradient-1);
+    border: .2em solid var(--primary);
     border-radius: .3em;
     background: transparent;
     font-size: 1.2rem;
-    padding: .1em;
+    font-weight: 500;
     text-align: center;
+}
+/* Fim Estilos Container */
 
+/* Inicio Estilos Botões */
+.buttons{
+    margin-top: 1em;
 }
 
+.buttons button {
+    width: 10em;
+    height: 2.5em;
+    border-radius: .5em;
+    border: solid var(--primary);
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all;
+    padding: .5em;
+}
+
+.buttons button:hover{
+    background: var(--secondary);
+    font-style: italic;
+}
+/* Fim Estilos Botões */
+
+/* Inicio Estilos Resultado */
+.containerResult{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerResult .titleResult{
+    font-size: 1.5em;
+    font-weight: 800;
+    color: var(--primary)
+}
+
+.containerResult .result{
+    margin-top: 1.8em;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-style: italic;
+}
+/* Fim Estilos Resultado */
 
 
